@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zLUM7LWlcxlVUyL004N+2lkzuxIMz4t53RPR5kTAXOE=",
+  "Source": "CarShop.Host",
+  "BasePath": "_content/CarShop.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,16 @@
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\bin\Debug\net9.0\CarShop.Features.deps.json
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\bin\Debug\net9.0\CarShop.Features.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\bin\Debug\net9.0\CarShop.Features.pdb
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\bin\Debug\net9.0\CarShop.Database.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\bin\Debug\net9.0\CarShop.Database.pdb
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.csproj.AssemblyReference.cache
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.AssemblyInfoInputs.cache
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.AssemblyInfo.cs
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.csproj.CoreCompileInputs.cache
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.sourcelink.json
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop..64AF2C64.Up2Date
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\refint\CarShop.Features.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\CarShop.Features.pdb
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Features\obj\Debug\net9.0\ref\CarShop.Features.dll

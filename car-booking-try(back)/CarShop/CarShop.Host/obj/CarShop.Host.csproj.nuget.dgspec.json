@@ -4,14 +4,14 @@
     "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\CarShop.Host.csproj": {}
   },
   "projects": {
-    "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\CarShop.Host.csproj": {
+    "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\CarShop.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\CarShop.Host.csproj",
-        "projectName": "CarShop.Host",
-        "projectPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\CarShop.Host.csproj",
+        "projectUniqueName": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\CarShop.Database.csproj",
+        "projectName": "CarShop.Database",
+        "projectPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\CarShop.Database.csproj",
         "packagesPath": "C:\\Users\\fajzu\\.nuget\\packages\\",
-        "outputPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\obj\\",
+        "outputPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fajzu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -46,9 +46,184 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Features\\CarShop.Features.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Features\\CarShop.Features.csproj",
+        "projectName": "CarShop.Features",
+        "projectPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Features\\CarShop.Features.csproj",
+        "packagesPath": "C:\\Users\\fajzu\\.nuget\\packages\\",
+        "outputPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Features\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fajzu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://artifactory.akbars.tech/artifactory/api/nuget/nuget": {},
+          "https://artifactory.akbars.tech/artifactory/api/nuget/v3/nuget": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\CarShop.Database.csproj": {
+                "projectPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\CarShop.Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\CarShop.Host.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\CarShop.Host.csproj",
+        "projectName": "CarShop.Host",
+        "projectPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\CarShop.Host.csproj",
+        "packagesPath": "C:\\Users\\fajzu\\.nuget\\packages\\",
+        "outputPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Host\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fajzu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://artifactory.akbars.tech/artifactory/api/nuget/nuget": {},
+          "https://artifactory.akbars.tech/artifactory/api/nuget/v3/nuget": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\CarShop.Database.csproj": {
+                "projectPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Database\\CarShop.Database.csproj"
+              },
+              "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Features\\CarShop.Features.csproj": {
+                "projectPath": "D:\\GitProj\\ORIS_CAR_SHOP\\car-booking-try(back)\\CarShop\\CarShop.Features\\CarShop.Features.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[8.1.1, )"
             }
           },
           "imports": [

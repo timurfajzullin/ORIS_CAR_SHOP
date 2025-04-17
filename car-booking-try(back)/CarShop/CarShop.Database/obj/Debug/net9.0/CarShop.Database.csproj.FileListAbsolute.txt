@@ -1,0 +1,15 @@
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\bin\Debug\net9.0\CarShop.Database.deps.json
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\bin\Debug\net9.0\CarShop.Database.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\bin\Debug\net9.0\CarShop.Database.pdb
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.csproj.AssemblyReference.cache
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.AssemblyInfoInputs.cache
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.AssemblyInfo.cs
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.csproj.CoreCompileInputs.cache
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.sourcelink.json
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\refint\CarShop.Database.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.pdb
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\ref\CarShop.Database.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\bin\Debug\net9.0\CarShop.Database.runtimeconfig.json
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Database\obj\Debug\net9.0\CarShop.Database.genruntimeconfig.cache

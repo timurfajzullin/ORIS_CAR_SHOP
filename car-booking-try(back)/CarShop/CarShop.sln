@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarShop.Host", "CarShop.Host\CarShop.Host.csproj", "{82CD134D-1CA6-4A84-B02B-65C8041F61C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarShop.Database", "CarShop.Database\CarShop.Database.csproj", "{3FE11ACF-74D8-44AF-9670-30613023328F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarShop.Features", "CarShop.Features\CarShop.Features.csproj", "{815C494F-FD94-4F6B-BD3A-1DFAD5C031A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{82CD134D-1CA6-4A84-B02B-65C8041F61C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82CD134D-1CA6-4A84-B02B-65C8041F61C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82CD134D-1CA6-4A84-B02B-65C8041F61C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE11ACF-74D8-44AF-9670-30613023328F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE11ACF-74D8-44AF-9670-30613023328F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE11ACF-74D8-44AF-9670-30613023328F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE11ACF-74D8-44AF-9670-30613023328F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{815C494F-FD94-4F6B-BD3A-1DFAD5C031A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{815C494F-FD94-4F6B-BD3A-1DFAD5C031A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{815C494F-FD94-4F6B-BD3A-1DFAD5C031A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{815C494F-FD94-4F6B-BD3A-1DFAD5C031A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

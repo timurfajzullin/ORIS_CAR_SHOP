@@ -6,6 +6,8 @@ import Layout from "./Components/Layout/Layout.jsx";
 import SettingsPage from "./Pages/SettingsPage.jsx";
 
 function App() {
+
+
     return (
         <Routes>
             <Route element={<Layout/>}>
