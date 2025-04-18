@@ -1,15 +1,49 @@
-import "../Styles/CardInfoStyles.css"
-import {useParams} from "react-router-dom";
-import {cars} from "../data/dataCars.jsx";
+import { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
+import "../Styles/CardInfoStyles.css";
+
+async function fetchCarInfo(id) {
+    try {
+        const response = await fetch(`http://localhost:5173/CarInfo/GetCarsInfos`);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const cars = await response.json();
+        return cars.find(car => car.id === id);
+    } catch (error) {
+        console.error('Error fetching car info:', error);
+        return null;
+    }
+}
 
 function CarPage() {
+    const { id } = useParams();
+    const [car, setCar] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    const { id } = useParams(); // id = "1" (если URL /car/1)
-    const car = cars.find(car => car.id === id);
+    useEffect(() => {
+        const loadCarData = async () => {
+            try {
+                const carData = await fetchCarInfo(id);
+                if (carData) {
+                    setCar(carData);
+                } else {
+                    setError('Car not found');
+                }
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
 
-    if (!car) {
-        return <div>Car not found!</div>;
-    }
+        loadCarData();
+    }, [id]);
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
+    if (!car) return <div>Car not found!</div>;
 
     return (
         <div>
@@ -26,7 +60,7 @@ function CarPage() {
                     </div>
                     <div className="wrapper-main-info">
                         <div className="wrapper-main-info-left">
-                            <img src={car.generalPicture}/>
+                            <img src={car.generalPicture} alt={car.brand}/>
                         </div>
                         <div className="wrapper-main-info-right">
                             <div className="wrapper-info-profile">
@@ -117,14 +151,9 @@ function CarPage() {
                     </div>
                 </div>
                 <div className="wrapper-catalog-photos">
-                    <img src={car.item1} width={300}/>
-                    <img src={car.item2} width={300}/>
-                    <img src={car.item3} width={300}/>
-                    <img src={car.item4} width={300}/>
-                    <img src={car.item5} width={300}/>
-                    <img src={car.item6} width={300}/>
-                    <img src={car.item7} width={300}/>
-                    <img src={car.item8} width={300}/>
+                    {car.pictures && car.pictures.map((item, index) => (
+                        <img key={index} src={item} alt={`Car ${index}`}/>
+                    ))}
                 </div>
             </div>
         </div>

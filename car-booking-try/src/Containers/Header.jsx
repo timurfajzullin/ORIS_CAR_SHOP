@@ -11,11 +11,10 @@ const Header = () => {
         setSearchTerm(params.get('search') || '');
     }, [location.search]);
 
-
     const handleKeyDown = (e) => {
         if (e.key === 'Enter' && searchTerm.trim()) {
-            // Перенаправляем на страницу результатов с поисковым запросом
-            navigate(`/cars?search=${encodeURIComponent(searchTerm)}`);
+            // Перенаправляем на страницу каталога с поисковым запросом
+            navigate(`/catalog?search=${encodeURIComponent(searchTerm)}`);
         }
     };
 

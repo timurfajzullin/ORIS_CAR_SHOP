@@ -2,7 +2,7 @@
 
 public class CarCard
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; set; } = new Guid();
     public int PercentRecommends { get; set; }
     public string PictureCard { get; set; }
     public string Brand { get; set; }

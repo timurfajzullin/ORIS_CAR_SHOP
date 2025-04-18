@@ -13,5 +13,5 @@ public class CarInfo
     public string FuelType { get; set; }
     public int Mileage { get; set; }
     public string Transmission { get; set; }
-    public List<string> Pictures { get; set; }
+    public string[] Pictures { get; set; }
 }

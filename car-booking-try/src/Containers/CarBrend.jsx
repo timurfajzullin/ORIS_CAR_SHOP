@@ -1,37 +1,25 @@
-const brends= [
-    {
-        alt: "Lamborghini",
-        src: "../images/Lamborghini_logo.png"
-    },
-    {
-        alt: "BMW",
-        src: "../images/BMW_logo.png"
-    },
-    {
-        alt: "Volvo",
-        src: "../images/Volvo_logo.png"
-    },
-    {
-        alt: "Mercedes-Benz",
-        src: "../images/Mercedes-Benz_logo.png"
-    },
-]
+import { useNavigate } from 'react-router-dom';
 
-function CarBrend()
-{
+function CarBrend() {
+    const navigate = useNavigate();
+
+    const handleBrandClick = (brandName) => {
+        navigate(`/catalog?search=${encodeURIComponent(brandName)}`);
+    };
+
     return (
         <div className="brand-logos">
-            <div className="brand-logos_card">
-                <img src="../images/Skoda_logo.png" alt="Lamborghini"/>
+            <div className="brand-logos_card" onClick={() => handleBrandClick('Jaecoo')}>
+                <img src="../images/CarLogos/jaecoo.png" alt="jaecoo"/>
             </div>
-            <div className="brand-logos_card">
-                <img src="../images/Logo_Porsche.png" alt="BMW"/>
+            <div className="brand-logos_card" onClick={() => handleBrandClick('Jaecoo')}>
+                <img src="../images/CarLogos/jaecoo.png" alt="jaecoo"/>
             </div>
-            <div className="brand-logos_card">
-                <img src="../images/Volvo_logo.png" alt="Volvo"/>
+            <div className="brand-logos_card" onClick={() => handleBrandClick('Subaru')}>
+                <img src="../images/CarLogos/subaru.png" alt="Subaru"/>
             </div>
-            <div className="brand-logos_card">
-                <img src="../images/Mercedes-Benz_logo.png" alt="Mercedes-Benz"/>
+            <div className="brand-logos_card" onClick={() => handleBrandClick('Subaru')}>
+                <img src="../images/CarLogos/subaru.png" alt="Subaru"/>
             </div>
         </div>
     )

@@ -324,3 +324,8 @@ body {
     width: 100%;
     margin-top: 20px;
 }
+.wrapper-catalog-photos img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

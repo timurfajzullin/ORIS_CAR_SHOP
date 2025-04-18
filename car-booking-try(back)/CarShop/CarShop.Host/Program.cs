@@ -1,5 +1,7 @@
+using CarShop.Controllers;
 using CarShop.Database;
 using CarShop.Features;
+using CarShop.Features.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,13 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ICarInfoServices, CarInfoService>();
+builder.Services.AddScoped<ICarCardServices, CarCardHandler>();
 
-builder.Services.AddScoped<ITest, Test>();
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IIpplicationServices, ApplicationService>();
 builder.Services.AddScoped<IMyDBContext, MyDBContext>();
 builder.Services.AddDbContext<MyDBContext>(options =>
     options.UseNpgsql(connectionString: builder.Configuration.GetConnectionString("MyDBContext")));
 
-// Настройка CORS (разрешаем запросы с 5173 и 5174)
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>

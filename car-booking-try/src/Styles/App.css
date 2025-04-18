@@ -191,10 +191,23 @@ body {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 }
 
-.card-img{
-  width: 100%;
-  height: 90%;
-  object-fit: contain;
+/* Контейнер для изображения (обрезает лишнее) */
+.wrapper-img {
+  overflow: hidden; /* Важно! */
+  width: 100%; /* Занимает всю ширину карточки */
+  display: flex;
+  justify-content: center; /* Центрирует изображение */
+}
+
+.card-img {
+  object-fit: scale-down; /* Сохраняет пропорции */
+  transition: transform 0.3s ease;
+  transform: scale(2.7);
+  height: auto; /* Автоматическая высота */
+}
+
+.card-img:hover {
+  transform: scale(2.9); /* Увеличивает на 5% при наведении */
 }
 
 .card-info{

@@ -1,14 +1,50 @@
-import {Link, useSearchParams} from "react-router-dom";
-import {cars} from "../data/dataCars.jsx";
+import { useState, useEffect } from 'react';
+import { Link, useSearchParams } from "react-router-dom";
+
+export const fetchData = async () => {
+    try {
+        const response = await fetch("http://localhost:5173/CarCard/GetCarCardsList");
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return [];
+    }
+}
 
 function CarCard() {
     const [searchParams] = useSearchParams();
     const searchQuery = searchParams.get('search') || '';
+    const [cars, setCars] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    const filteredCars = cars.filter(car =>
-        car.brand.toLowerCase().includes(searchQuery.toLowerCase()));
+    useEffect(() => {
+        const loadData = async () => {
+            try {
+                const data = await fetchData();
+                setCars(data);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
 
-    return (filteredCars.map(car => (
+        loadData();
+    }, []);
+
+    const filteredCars = searchQuery
+        ? cars.filter(car =>
+            car.brand.toLowerCase().includes(searchQuery.toLowerCase()))
+        : cars;
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
+
+    return filteredCars.map(car => (
         <Link
             to={`/car/${car.id}`}
             key={car.id}
@@ -18,7 +54,7 @@ function CarCard() {
                 <p className="rec-text">{car.percentRecommends}% Recommend</p>
             </div>
             <div className="wrapper-img">
-                <img src={car.pictureCard} alt="BMW" width="200" className="card-img"/>
+                <img src={car.pictureCard} alt={car.brand} width={130} className="card-img"/>
             </div>
             <div className="card-info">
                 <h2>{car.brand}</h2>
@@ -35,7 +71,7 @@ function CarCard() {
                 </div>
             </div>
         </Link>
-    )))
+    ));
 }
 
 export default CarCard;

@@ -11,7 +11,7 @@ const itemsNavbar = [
     {
         src:"../images/assets_icon.png",
         textItem:"Assets",
-        href:"/",
+        href:"/apply",
         isLink: true
     },
     {

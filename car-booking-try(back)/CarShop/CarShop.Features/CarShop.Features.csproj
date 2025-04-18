@@ -10,4 +10,8 @@
       <ProjectReference Include="..\CarShop.Database\CarShop.Database.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MailKit" Version="4.5.0" />
+    </ItemGroup>
+
 </Project>

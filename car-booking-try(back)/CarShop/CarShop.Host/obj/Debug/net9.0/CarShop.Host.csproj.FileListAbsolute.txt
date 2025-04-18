@@ -127,3 +127,6 @@ D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Host\bin\Debug\ne
 D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Host\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Host\bin\Debug\net9.0\CarShop.Features.dll
 D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Host\bin\Debug\net9.0\CarShop.Features.pdb
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Host\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Host\bin\Debug\net9.0\MailKit.dll
+D:\GitProj\ORIS_CAR_SHOP\car-booking-try(back)\CarShop\CarShop.Host\bin\Debug\net9.0\MimeKit.dll
