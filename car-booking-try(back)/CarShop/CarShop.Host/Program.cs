@@ -38,7 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(); // ← Важно: до MapControllers()
+app.UseCors();
 app.MapControllers();
 app.MapDefaultControllerRoute();
 

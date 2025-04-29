@@ -983,7 +983,9 @@
         "net9.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://artifactory.akbars.tech/artifactory/api/nuget/nuget": {},
+        "https://artifactory.akbars.tech/artifactory/api/nuget/v3/nuget": {}
       },
       "frameworks": {
         "net9.0": {
